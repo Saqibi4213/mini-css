@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(95, 95, 199, 0.932);
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.image .portfolio-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 15px;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.767);
+  border-radius: 24px;
+  padding: 25px;
+  position: relative;
+}
+
+.portfolio-card::before {
+  top: 0;
+  left: 0;
+  border-radius: 24px 24px 0 0;
+  content: "";
+  position: absolute;
+  height: 36%;
+  width: 100%;
+  background-color: #4070f4;
+}
+.portfolio-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-data .name {
+  font-size: 1.6vw;
+  font-weight: 600;
+}
+
+.text-data .job {
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+.portfolio-card .media-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.media-buttons #links {
+  text-decoration: none;
+  list-style: none;
+  height: 34px;
+  width: 34px;
+  font-size: 18px;
+  margin: 0 8px;
+  background-color: rgb(56, 56, 180);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.portfolio-card .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  gap: 1vw;
+}
+
+.button {
+  margin: 0 10px;
+  padding: 8px 24px;
+  background-color: #4070f4;
+  border-radius: 24px;
+  border: none;
+  color: #fff;
+  font-size: 1vw;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+
+.buttons .button:hover {
+  background-color: aquamarine;
+}
+
+.portfolio-card .analytics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.analytics .data {
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 0 20px;
+  border-right: 2px solid rgb(187, 186, 186);
+  margin-top: 10px;
+}
+
+.data:last-child {
+  border: none;
+}
+
+.data i {
+  font-size: 18px;
+  margin-right: 10px;
+}
